@@ -34,3 +34,8 @@ void ExtractField(uint32_t reg, uint8_t pos, uint8_t width){
 
 }
 
+void SetBitsAtFirst(uint32_t reg, uint8_t set_bit) {
+
+    reg |= (set_bit << 0);
+
+}
