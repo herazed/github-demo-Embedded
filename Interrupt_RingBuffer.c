@@ -129,5 +129,9 @@ int main(){
         arrived_data_flag++;
     }
 
+    else {
+		printf("No data received\n");
+    }
+
     return 0;
 }
