@@ -110,6 +110,9 @@ int main(){
             USART_Send_Msg(UDS_Service[id]);
 			printf("Data received: %s\n", mdata);
         }
+        else {
+			printf("No data received\n");
+        }
 
     }
 
