@@ -98,6 +98,7 @@ void USART1_IRQHandler(){
 int main(){
 
     uint8_t mdata[bufer_max_size];
+    uint16_t length = 0;
 
     while(1){
         
@@ -109,6 +110,10 @@ int main(){
         if(parse(mdata) == UDS_Service[id]){
             USART_Send_Msg(UDS_Service[id]);
 			printf("Data received: %s\n", mdata);
+            length++;
+        }
+        else {
+			printf("No data received\n");
         }
 
     }
