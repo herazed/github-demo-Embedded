@@ -108,6 +108,7 @@ int main(){
 
         if(parse(mdata) == UDS_Service[id]){
             USART_Send_Msg(UDS_Service[id]);
+			printf("Data received: %s\n", mdata);
         }
 
     }
@@ -115,23 +116,23 @@ int main(){
     return 0;
 }
 
-volatile uint32_t arrived_data_flag = 0;
-
-void USART1_IRQHandler(){
-
-    arrived_data_flag = 1;
-
-}
-
-int main(){
-
-    if(data_received()){
-        arrived_data_flag++;
-    }
-
-    else {
-		printf("No data received\n");
-    }
-
-    return 0;
-}
+//volatile uint32_t arrived_data_flag = 0;
+//
+//void USART1_IRQHandler(){
+//
+//    arrived_data_flag = 1;
+//
+//}
+//
+//int main(){
+//
+//    if(data_received()){
+//        arrived_data_flag++;
+//    }
+//
+//    else {
+//		printf("No data received\n");
+//    }
+//
+//    return 0;
+//}
