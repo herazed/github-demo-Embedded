@@ -98,7 +98,7 @@ void USART1_IRQHandler(){
 int main(){
 
     uint8_t mdata[bufer_max_size];
-    uint16_t length = 0;
+    uint16_t length = 10;
 
     while(1){
         
