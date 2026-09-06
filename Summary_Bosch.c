@@ -195,3 +195,5 @@ void Wiper_State_Machine_Update(void){
 
 
 /* Thu ghi gi do o day xem co conflict khong hihi */
+
+/* Day la dong dung de modify thu */
